@@ -10,7 +10,7 @@ on:
 jobs:    
   Linting: 
       runs-on: ubuntu-latest 
-       steps: 
+      steps: 
        - uses: actions/checkout@v2
        - name: Python install
          uses: actions/setup-python@v2
