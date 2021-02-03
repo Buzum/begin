@@ -8,11 +8,9 @@ on:
   pull_request:
     branches: [ master ]
 jobs:    
- Linting: 
-  build:
-   runs-on: ubuntu-latest 
-     
-   steps: 
+  Linting: 
+      runs-on: ubuntu-latest 
+       steps: 
        - uses: actions/checkout@v2
        - name: Python install
          uses: actions/setup-python@v2
