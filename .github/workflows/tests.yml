@@ -1,4 +1,4 @@
-name: TEST
+name: TESTS
 
 # Controls when the action will run. 
 on:
@@ -7,7 +7,7 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-jobs: 
+Linting: 
   build:
    runs-on: ubuntu-latest 
      
@@ -22,7 +22,7 @@ jobs:
        - name: result
          run: echo linting is done
         
-  test:
+  testing:
     needs: build
     runs-on: ubuntu-latest
 
