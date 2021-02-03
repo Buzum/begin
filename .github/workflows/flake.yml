@@ -24,6 +24,7 @@ jobs:
 
         #SO what? 
   test:
+    needs: build
     runs-on: ubuntu-latest
 
     steps:
@@ -41,6 +42,7 @@ jobs:
         - name: result
           run: echo something was happened 
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
